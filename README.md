@@ -3,9 +3,10 @@
 # ⚡ Pokémon X & Y: No Trade Evolutions (NTEVO)
 ### *Mod de Qualidade de Vida (QoL) para Nintendo 3DS e Emuladores*
 
-![Platform](https://img.shields.io/badge/Platform-Nintendo%203DS%20%7C%20Citra-red?style=for-the-badge&logo=nintendo-3ds)
+![Platform](https://img.shields.io/badge/Platform-Nintendo%203DS%20%7C%20Citra%20%7C%20Azahar-red?style=for-the-badge&logo=nintendo-3ds)
 ![Game](https://img.shields.io/badge/Games-Pok%C3%A9mon%20X%20%26%20Y-blue?style=for-the-badge)
 ![Type](https://img.shields.io/badge/Mod%20Type-LayeredFS%20(Plug%20%26%20Play)-green?style=for-the-badge)
+![Installer](https://img.shields.io/badge/Installer-Execut%C3%A1vel%20.EXE%20(GUI)-purple?style=for-the-badge)
 ![Save Compatibility](https://img.shields.io/badge/Save%20Safe-100%25-brightgreen?style=for-the-badge)
 
 <p align="center">
@@ -16,6 +17,18 @@
 ---
 
 </div>
+
+## 🚀 Como Instalar (Método Mais Fácil - Executável .EXE)
+
+Para a máxima facilidade e segurança, criamos um instalador com interface visual próprio:
+
+1. Baixe e abra o executável: **`Pokemon_NoTrade_Installer.exe`** *(disponível na raiz ou na pasta [Releases/](Releases/))*.
+2. Escolha onde deseja instalar:
+   - 🎮 **Console Nintendo 3DS:** Selecione o cartão SD conectado ao PC e clique em **"Instalar Mod Agora"**.
+   - 💻 **Emulador (Citra / Azahar / Lime3DS):** Selecione a pasta de Mods e instale com 1 clique.
+3. Pronto! O instalador cuida de tudo sozinho.
+
+---
 
 ## 📌 Visão Geral
 
@@ -72,34 +85,14 @@ Este mod resolve esse problema de forma **100% nativa e não invasiva**:
 
 ---
 
-## 🎮 Guia de Instalação
+## 🎮 Ativação no Console Nintendo 3DS (Luma3DS)
 
-### Opção A: Console Nintendo 3DS / 2DS Original (Luma3DS)
-
-1. Conecte o **Cartão SD** do seu 3DS no computador.
-2. Acesse a pasta `Mod-Package/3DS_Luma3DS/` deste projeto.
-3. Copie a pasta **`luma`** inteira para a **raiz do seu Cartão SD**.
-   * *A estrutura no SD ficará:*
-     * `SD:/luma/titles/0004000000055D00/romfs/a/2/1/5` *(Pokémon X)*
-     * `SD:/luma/titles/0004000000055E00/romfs/a/2/1/5` *(Pokémon Y)*
-4. Insira o Cartão SD de volta no 3DS.
-5. Segure o botão **`SELECT`** do 3DS e ligue o console no botão **`POWER`**.
-6. No menu do Luma3DS que abrir:
+1. Insira o Cartão SD no 3DS após a instalação.
+2. Segure o botão **`SELECT`** do 3DS e ligue o console no botão **`POWER`**.
+3. No menu do Luma3DS:
    * Certifique-se de que a opção **`(x) Enable game patching`** está marcada com `(x)`.
-7. Pressione **`START`** para salvar e iniciar o console.
-8. Abra seu **Pokémon X** ou **Pokémon Y** (em cartucho físico ou digital) e aproveite!
-
----
-
-### Opção B: Emuladores no PC/Android (Citra, Lime3DS, Azahar)
-
-1. Abra o seu emulador no computador.
-2. Na lista de jogos, clique com o **botão direito** sobre **Pokémon X** ou **Pokémon Y** e escolha **"Open Mods Location"** *(ou "Abrir Local dos Mods")*.
-3. Copie a pasta **`romfs`** correspondente que está em `Mod-Package/Citra_Lime3DS/`:
-   * Para Pokémon Y: `Mod-Package/Citra_Lime3DS/Pokemon_Y/romfs`
-   * Para Pokémon X: `Mod-Package/Citra_Lime3DS/Pokemon_X/romfs`
-4. Cole dentro da pasta que o emulador abriu.
-5. Inicie o jogo e jogue normalmente!
+4. Pressione **`START`** para salvar e iniciar o console.
+5. Abra seu **Pokémon X** ou **Pokémon Y** (em cartucho físico ou digital) e aproveite!
 
 ---
 
@@ -107,36 +100,19 @@ Este mod resolve esse problema de forma **100% nativa e não invasiva**:
 
 ```text
 Pokemon-XY-No-Trade-Mod/
+├── Pokemon_NoTrade_Installer.exe    # Instalador Oficial Executável com Interface Gráfica
 ├── Mod-Package/                     # Arquivos do mod compilados e prontos
 │   ├── 3DS_Luma3DS/                 # Pacote para o Cartão SD do 3DS
 │   │   └── luma/titles/
 │   │       ├── 0004000000055D00/    # Title ID Pokémon X (romfs/a/2/1/5)
 │   │       └── 0004000000055E00/    # Title ID Pokémon Y (romfs/a/2/1/5)
-│   └── Citra_Lime3DS/               # Pacote para Emuladores no PC
+│   └── Citra_Lime3DS/               # Pacote para Emuladores
 │       ├── Pokemon_X/romfs/a/2/1/5
 │       └── Pokemon_Y/romfs/a/2/1/5
+├── Releases/                        # Executável e pacotes .zip
 ├── docs/                            # Documentações detalhadas
-│   ├── TABELA_EVOLUCOES.md
-│   ├── GUIA_INSTALACAO_3DS.md
-│   ├── GUIA_INSTALACAO_CITRA.md
-│   └── COMO_CRIAR_ARQUIVOS_PK3DS.md
-├── tools/                           # Scripts Python automatizados
-│   └── build_no_trade_mod.py        # Compilador e patcher dos dados GARC
-└── README.md                        # Este documento
+└── README.md                        # Documentação principal
 ```
-
----
-
-## ❓ Perguntas Frequentes (FAQ)
-
-**P: Isso estraga o meu savegame?**  
-*R:* Não! O savegame gerado é 100% oficial e válido. Se você desativar o mod no futuro, os Pokémon que você evoluiu continuarão evoluídos no seu save sem nenhum problema.
-
-**P: Funciona em cartucho original físico?**  
-*R:* Sim! O recurso LayeredFS do Luma3DS intercepta a leitura do cartucho físico e aplica a tabela modificada sem alterar nada fisicamente no cartucho.
-
-**P: Como desinstalar o mod?**  
-*R:* No 3DS, basta apagar a pasta `luma/titles/0004000000055D00` (ou `55E00`) do seu Cartão SD ou desmarcar a opção *Enable game patching* no menu SELECT do Luma3DS. No emulador, basta apagar a pasta `romfs` da pasta de mods.
 
 ---
 
